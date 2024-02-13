@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Valentine's Day Website</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				background-color: #f7d1e0; /* Light pink */
+				color: #4a4a4a; /* Dark gray */
+			}
+			header {
+				background-color: #ff4d6d; /* Pink */
+				padding: 20px;
+				text-align: center;
+				color: white;
+			}
+			h1 {
+				margin: 0;
+				animation: pulse 1.5s infinite alternate; /* Animation for header */
+			}
+			@keyframes pulse {
+				from {
+					transform: scale(1);
+				}
+				to {
+					transform: scale(1.05);
+				}
+			}
+			.container {
+				max-width: 800px;
+				margin: 20px auto;
+				padding: 0 20px;
+				animation: slideIn 1s ease-out; /* Animation for container */
+			}
+			@keyframes slideIn {
+				from {
+					opacity: 0;
+					transform: translateY(-50px);
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+			p {
+				font-size: 18px;
+			}
+			.image-container {
+				text-align: center;
+				margin-top: 50px;
+				animation: rotate 5s linear infinite; /* Animation for image */
+			}
+			@keyframes rotate {
+				0% {
+					transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+			img {
+				max-width: 50%;
+				height: auto;
+			}
+			footer {
+				background-color: #ff4d6d; /* Pink */
+				padding: 20px;
+				text-align: center;
+				color: white;
+				position: fixed;
+				width: 100%;
+				bottom: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Happy Valentine's Day!</h1>
+		</header>
+
+		<div class="container">
+			<p>
+				Express your love and affection to your special someone this Valentine's
+				Day.
+			</p>
+			<div class="image-container">
+				<img
+					src="https://st5.depositphotos.com/1069290/66933/v/450/depositphotos_669333064-stock-illustration-red-heart-emoji-icon-white.jpg"
+					alt="Valentine's Day"
+				/>
+			</div>
+		</div>
+
+		<footer>
+			<p>Wish you the best!</p>
+		</footer>
+	</body>
+</html>
