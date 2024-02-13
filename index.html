@@ -41,8 +41,8 @@
 				animation: slideIn 1s ease-out;
 			}
 
-			.container img {
-				margin-top: 16em;
+			.container video {
+				margin-top: 8em;
 				height: 100%;
 				width: auto;
 				display: flex;
@@ -76,6 +76,7 @@
 			}
 
 			.backgroundImage {
+				opacity: 0.2;
 				top: 0;
 				left: 0;
 				right: 0;
@@ -91,7 +92,8 @@
 			}
 
 			footer {
-				padding: 20px;
+				background-color: rgba(0, 0, 0, 0.4);
+				padding: 1em 0;
 				text-align: center;
 				color: white;
 				position: fixed;
@@ -101,24 +103,24 @@
 		</style>
 	</head>
 	<body>
-		<div class="backgroundImage">
-			<img src="./STEVEN.png" />
-		</div>
 		<header>
 			<h1>Happy Valentine's Day!</h1>
 		</header>
 
 		<div class="container">
-			<img src="./Vio2.png" alt="Valentine's Day" />
+			<video autoplay muted loop>
+				<source src="movie.mp4" type="video/mp4" />
+				Your browser does not support the video tag.
+			</video>
 		</div>
 
 		<footer>
-			<h1>Wish you the best!</h1>
+			<h1>Wish you the best <3</h1>
 			<p>
 				Violita... <br />
 				Mata mu bagaikan itu permata... <br />
 				Jika kau tersakiti akan ku angkat senjata... <br />
-				Untuk mendapat cinta mu, aku rela makan batu bata <br />
+				Makanan favorit ku batu bata <br />
 			</p>
 		</footer>
 	</body>
