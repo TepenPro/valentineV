@@ -23,18 +23,34 @@
 				animation: pulse 1.5s infinite alternate; /* Animation for header */
 			}
 			@keyframes pulse {
-				from {
+				0% {
 					transform: scale(1);
 				}
-				to {
+				50% {
 					transform: scale(1.05);
+				}
+				100% {
+					transform: scale(1);
 				}
 			}
 			.container {
-				max-width: 800px;
-				margin: 20px auto;
-				padding: 0 20px;
-				animation: slideIn 1s ease-out; /* Animation for container */
+				height: 60vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				animation: slideIn 1s ease-out;
+			}
+
+			.container img {
+				margin-top: 16em;
+				height: 100%;
+				width: auto;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+
+				animation: pulse 2s linear infinite;
 			}
 			@keyframes slideIn {
 				from {
@@ -49,11 +65,7 @@
 			p {
 				font-size: 18px;
 			}
-			.image-container {
-				text-align: center;
-				margin-top: 50px;
-				animation: rotate 5s linear infinite; /* Animation for image */
-			}
+
 			@keyframes rotate {
 				0% {
 					transform: rotate(0deg);
@@ -62,12 +74,23 @@
 					transform: rotate(360deg);
 				}
 			}
-			img {
-				max-width: 50%;
-				height: auto;
+
+			.backgroundImage {
+				top: 0;
+				left: 0;
+				right: 0;
+				margin: auto auto;
+				width: 100vw;
+				height: 80vh;
+				position: absolute;
 			}
+
+			.backgroundImage img {
+				width: 40%;
+				height: 100%;
+			}
+
 			footer {
-				background-color: #ff4d6d; /* Pink */
 				padding: 20px;
 				text-align: center;
 				color: white;
@@ -78,19 +101,25 @@
 		</style>
 	</head>
 	<body>
+		<div class="backgroundImage">
+			<img src="./STEVEN.png" />
+		</div>
 		<header>
 			<h1>Happy Valentine's Day!</h1>
 		</header>
 
 		<div class="container">
-			<p>尊敬的维奥利塔</p>
-			<div class="image-container">
-				<img src="./Vio2.png" alt="Valentine's Day" />
-			</div>
+			<img src="./Vio2.png" alt="Valentine's Day" />
 		</div>
 
 		<footer>
-			<p>Wish you the best!</p>
+			<h1>Wish you the best!</h1>
+			<p>
+				Violita... <br />
+				Mata mu bagaikan itu permata... <br />
+				Jika kau tersakiti akan ku angkat senjata... <br />
+				Untuk mendapat cinta mu, aku rela makan batu bata <br />
+			</p>
 		</footer>
 	</body>
 </html>
